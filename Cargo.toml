@@ -1,0 +1,7 @@
+[workspace]
+members = ["pallets/*"]
+
+[profile.release]
+# Substrate runtime requires unwind apparently, and anyways it gives more useful
+# panic messages which can be useful for troubleshooting purposes
+panic = "unwind"
